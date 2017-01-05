@@ -1,4 +1,4 @@
-# Math Expression Evaluator  [![NuGet Version](https://buildstats.info/nuget/Math-Expression-Evaluator)](https://www.nuget.org/packages/Math-Expression-Evaluator//) 
+# Math Expression Evaluator  [![NuGet Version](https://buildstats.info/nuget/Math-Expression-Evaluator)](https://www.nuget.org/packages/Math-Expression-Evaluator//)
 
 Math Expression Evaluator is a library for evaluating simple mathematical expressions. It supports simple expressions such as `2.5+5.9`, `17.89-2.47+7.16`, `5/2/2+1.5*3+4.58`, expressions with parentheses `(((9-6/2)*2-4)/2-6-1)/(2+24/(2+4))` and expressions with variables:
 
@@ -22,9 +22,9 @@ var c = 2.6m;
 Assert.That(dynamicEngine.Evaluate("(c+b)*a", a: 6, b: 4.5, c: 2.6),
             Is.EqualTo((c + b) * a));
 ```
+## Changes in this fork
+This fork (Rbn3D) makes a small enhacenment, now you can evaluate an expression passing variables, and the expression itself doesn't explicitly need to use all the vars provided. However, if you try to use a var that is not passed, it will fail.
 
 ## Installation
 
-``` 
-PM> Install-Package Math-Expression-Evaluator 
-```
+Clone repository, open in Visual Studio and compile as DLL
